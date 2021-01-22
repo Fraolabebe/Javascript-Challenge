@@ -27,33 +27,7 @@
     </div>
     <div class="container">
       <div class="row margin-top-50">
-        <div class="col-md-2">
-          <aside class="filters">
-            <div class="panel panel-default">
-              <div class="panel-heading">Filter Search</div>
-              <div class="panel-body">
-                <form>
-                  <div class="form-group">
-                    <ul class="list-group" id="filters">
-                    <ul class="list-group" id="filters">
-                    <ul class="list-group" id="filters">
-                    <ul class="list-group" id="filters"> Date</ul>
-                        </ul>
-                      </ul>
-                      <li class="filter list-group-item">
-                        <label for="date">Enter a Date</label>
-
-                        <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
-                      </li>
-                    </ul>
-                  </div>
-                  <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
-                </form>
-              </div>
-            </div>
-          </aside>
-        </div>
-        <div class="col-md-10">
+        <div class="col-md-12">
           <div id="table-area" class="">
             <table id="ufo-table" class="table table-striped">
               <thead>
@@ -65,6 +39,15 @@
                   <th class="table-head">Shape</th>
                   <th class="table-head">Duration</th>
                   <th class="table-head">Comments</th>
+                </tr>
+                <tr>
+                  <th><input id="datetime"></th>
+                  <th><input id="city"></th>
+                  <th><input id="state"></th>
+                  <th><input id="country"></th>
+                  <th><input id="shape"></th>
+                  <th></th>
+                  <th> <button class="btn btn-success">Clear filters</button></th>
                 </tr>
               </thead>
               <tbody></tbody>
@@ -79,8 +62,7 @@
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
   <script src="static/js/data.js"></script>
-  <script src="static/js/app.js"></script>
-  
+  <script src="static/js/app2.js"></script>
 </body>
 
 </html>
